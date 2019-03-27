@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <my-map :markersPos='[
+        {"lat":35.6432027,"lng":139.6729435},
+        {"lat":35.5279833,"lng":139.6989209},
+        {"lat":35.6563623,"lng":139.7215211},
+        {"lat":35.6167531,"lng":139.5469376},
+        {"lat":35.6950961,"lng":139.5037899}
+      ]'>
+    </my-map>
   </div>
 </template>
+
+<script>
+import MyMap from "./components/MyMap"
+
+export default {
+  components: {
+    MyMap
+  }  
+}
+</script>
+
 
 <style lang="scss">
 #app {
