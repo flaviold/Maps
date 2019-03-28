@@ -1,9 +1,6 @@
 <template>
   <div>
     <div id="map"></div>
-    <template v-if="!!this.google && !!this.map"
-      >Teste</template
-    >
   </div>
 </template>
 

@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     google: null,
-    map: null
+    map: null,
+    markers: []
   },
   mutations: {
     setGoogle(state, google) {
@@ -14,6 +15,9 @@ export default new Vuex.Store({
     },
     setMap(state, map) {
       state.map = map;
+    },
+    insertMarker(state, marker) {
+      state.markers.push(marker);
     }
   },
   actions: {}
